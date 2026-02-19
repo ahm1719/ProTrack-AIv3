@@ -53,7 +53,7 @@ const FocusTaskCard = ({ task, onEdit }: { task: Task, onEdit: () => void }) => 
       <span className="text-xs font-mono text-slate-500">{task.displayId}</span>
       <span className={`w-2 h-2 rounded-full ${task.priority === Priority.Critical ? 'bg-danger' : 'bg-primary'}`}></span>
     </div>
-    <h4 className="text-[16px] font-bold text-slate-200 group-hover:text-primary transition-colors">{task.title}</h4>
+    <h4 className="text-base font-bold text-slate-200 group-hover:text-primary transition-colors">{task.title}</h4>
     <div className="flex items-center justify-between mt-3">
         <span className={`text-[10px] px-2 py-0.5 rounded ${task.status === Status.Done ? 'bg-success/20 text-success' : 'bg-slate-700 text-slate-400'}`}>
             {task.status}
